@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # ---------- 註冊自訂APP ----------- 
+    'Book',
 ]
 
 MIDDLEWARE = [
@@ -103,9 +105,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hant' # 繁體漢字 ref. https://gist.github.com/OHua/fd35bec69a2a84c4fdfe4ec14644edfa
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei' #  Django TIME_ZONE 設定台北時間 ref.http://violin-tao.blogspot.com/2015/06/django-timezone.html
 
 USE_I18N = True
 
