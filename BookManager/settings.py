@@ -56,7 +56,7 @@ ROOT_URLCONF = 'BookManager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")], # 將自訂template路徑定義在此 ( BASE_DIR 是 專案根目錄 )
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

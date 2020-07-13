@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        div {
+            text-align: center;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                1 of 3
+            </div>
+            <div class="col-8">
+                2 of 3 (wider)
+            </div>
+            <div class="col-2">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                
+            </div>
+            <div class="col-8">
+                <h1>我是index.html</h1>
+                <h2>{{ empList }}</h2>
+            
+                <table class="table table-hover" border="2">
+                    <thead>
+                        <tr>
+                            <th>empName</th>
+                            <th>empAge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for perEmp in empList %}
+                        <tr>
+                            <td>{{ perEmp.empName }}</td>
+                            <td>{{ perEmp.empAge }}</td>
+                        </tr>
+                        {% endfor %}            
+                    </tbody>
+                </table>                
+            </div>
+            <div class="col-2">
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
