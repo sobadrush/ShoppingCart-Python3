@@ -77,8 +77,19 @@ WSGI_APPLICATION = 'BookManager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        # MSSQL
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'TEST_DJANGO_MSSQL_DB',
+        'USER': 'sa',
+        'PASSWORD': 'sa123456',
+        'HOST': '127.0.0.1',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'SQL Server Native Client 11.0', # ref. https://www.itread01.com/content/1544108421.html
+        },        
     }
 }
 
