@@ -82,7 +82,7 @@ DATABASES = {
 
         # MSSQL
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'TEST_DJANGO_MSSQL_DB',
+        'NAME': 'DJANGO_MSSQL_TEST_DB',
         'USER': 'sa',
         'PASSWORD': 'sa123456',
         'HOST': '127.0.0.1',
